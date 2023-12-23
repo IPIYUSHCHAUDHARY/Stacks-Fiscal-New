@@ -294,7 +294,9 @@ li {
 .chkbxWrapr .chkbx {
     width: 24px;
     height: 24px;
-    background: #eee;
+    background: #fff;
+    border: 1px solid #D7DADC;
+    box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.078);
     margin-right: 20px;
     position: relative;
 }
@@ -399,6 +401,7 @@ li {
     box-shadow: none;
 }
 
+.calendarBar .applyBtn:hover,
 .submitBtn:hover {
     background: #fff;
     color: #E5972A;

@@ -70,7 +70,7 @@ li {
 }
 
 .calendarBar .slctMonth .slctMonth-list {
-    width: 120px;
+    width: 105px;
     font-size: 12px;
     line-height: 14px;
     color: #333333;
@@ -125,7 +125,7 @@ li {
     background: #f2faff;
     border-top: 2px solid #00346a;
     border-bottom: 1px solid #D7DADC;
-    padding: 12px 15px 12px 20px;
+    padding: 12px 16px;
 }
 
 .detailCard .detailCard-head {
@@ -299,10 +299,6 @@ li {
     position: relative;
 }
 
-.chkbxWrapr:hover .chkbx {
-    background: #ccc;
-}
-
 .chkbxWrapr .form-inpt:checked~.chkbx {
     background: #47B31A;
 }
@@ -317,11 +313,11 @@ li {
     left: 50%;
     border-left: 3px solid #fff;
     border-bottom: 3px solid #fff;
-    transform: translate(-50%, -50%) rotate(-45deg);
-    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-    -moz-transform: translate(-50%, -50%) rotate(-45deg);
-    -ms-transform: translate(-50%, -50%) rotate(-45deg);
-    -o-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -75%) rotate(-45deg);
+    -webkit-transform: translate(-50%, -75%) rotate(-45deg);
+    -moz-transform: translate(-50%, -75%) rotate(-45deg);
+    -ms-transform: translate(-50%, -75%) rotate(-45deg);
+    -o-transform: translate(-50%, -75%) rotate(-45deg);
 }
 
 .container input:checked~.chkbx:after {
@@ -373,6 +369,7 @@ li {
 }
 
 .commentAreaWrapr .commentTxtBx {
+    display: block;
     width: 100%;
     padding: 8px 10px;
     border: 1px solid #D7DADC;
@@ -384,14 +381,26 @@ li {
     appearance: none;
 }
 
+.chkbxWrapr:hover .chkbx,
+.agreeRadioWrapr .form-wrapr .form-inpt:hover,
+.commentAreaWrapr .commentTxtBx:hover {
+    border-color: #0C3B55;
+}
+
 .submitBtn,
-.submitBtn:hover,
 .submitBtn:focus {
     background: #E5972A;
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
     color: #FFFFFF;
+    text-transform: uppercase;
     padding: 8px 32px;
     box-shadow: none;
+}
+
+.submitBtn:hover {
+    background: #fff;
+    color: #E5972A;
+    border-color: #E5972A;
 }
